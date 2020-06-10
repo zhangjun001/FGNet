@@ -1,21 +1,21 @@
-#Joint Fully Convolutional and Graph Convolutional Networks for Weakly-Supervised Segmentation of Pathology Images
+# Joint Fully Convolutional and Graph Convolutional Networks for Weakly-Supervised Segmentation of Pathology Images
 
 # Instructions
 A trained checkpoint numbered 1000 is provided with 9 HER2 pathology images for use in inference.  
 This checkpoint is trained with 226 HER2 pathology images from a private dataset  
 
-##To run inference:  
+## To run inference:  
 `python3 finaledgegcncopy.py --inference-path full_path_to/inference --checkpoint xxxx`
 for example, with provided images and state dict, run like:  
 `python3 finaledgegcncopy.py --inference-path full_path_to/inference --checkpoint 1000`
   
-##To run Train:  
+## To run Train:  
 `python3 finaledgegcncopy.py` 
   
-##To resume Train:  
+## To resume Train:  
 `python3 finaledgegcncopy.py --checkpoint xxxx`
   
-##Flags and folders:  
+## Flags and folders:  
   
 `--train-path` or `./train_process_files`: a folder which the pipeline saves training visualization files to  
   
